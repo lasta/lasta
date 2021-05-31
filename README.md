@@ -1,5 +1,3 @@
-# Profile 👋
-
 Atsushi Koshikizawa (@lasta)
 
 Full text search engine, server-side application, natural language processing engineer.
@@ -27,15 +25,23 @@ val lasta = object {
         val languages = sequenceOf("Kotlin (JVM)", "Java")
         val frameworks = sequenceOf("Spring Framework", "Ktor", "JUnit 5", "MockK")
         val systems = sequenceOf("Apache Solr")
-        val knowledges = sequenceOf("Full-text search", "Unit testing", "Developing server-side application")
         val tools = sequenceOf("Vim", "IntelliJ IDEA")
         val playing = sequenceOf("Darts", "Electone")
+        val knowledges = sequenceOf(
+            "Full-text search",
+            "Unit testing",
+            "Developing server-side application"
+        )
     }
 
     val learning = object {
         val languages = sequenceOf("Go", "Kotlin (Native)")
         val systems = sequenceOf("Elasticsearch")
-        val knowledges = sequenceOf("Full-text search", "SRE", "FaaS", "CaaS")
+        val knowledges = sequenceOf(
+            "Full-text search",
+            "SRE",
+            "Natural language processing"
+        )
     }
 }
 ```
