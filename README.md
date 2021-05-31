@@ -11,37 +11,39 @@ Full text search engine, server-side application, natural language processing en
     * [search-tech-jp](https://twitter.com/takuya_b/status/1377219737457860610)
 
 ```kotlin
-val lasta = object {
-    val basic = object {
-        val name = "Atsushi Koshikizawa"
-        val location = "Tokyo, Japan"
-        val roles = sequenceOf(
+val lasta = Profile(
+    basic = Basic(
+        name = "Atsushi Koshikizawa",
+        location = Location("Tokyo", "Japan"),
+        roles = sequenceOf(
             "Full-text search engine engineer",
             "Server-side application engineer"
-        )
-    }
+        ),
+    ),
 
-    val favorites = object {
-        val languages = sequenceOf("Kotlin (JVM)", "Java")
-        val frameworks = sequenceOf("Spring Framework", "Ktor", "JUnit 5", "MockK")
-        val systems = sequenceOf("Apache Solr")
-        val tools = sequenceOf("Vim", "IntelliJ IDEA")
-        val playing = sequenceOf("Darts", "Electone")
-        val knowledges = sequenceOf(
+    favorites = ProfileEntry(
+        languages = sequenceOf("Kotlin (JVM)", "Java"),
+        frameworks = sequenceOf("Spring Framework", "Ktor", "JUnit 5", "MockK"),
+        systems = sequenceOf("Apache Solr"),
+        tools = sequenceOf("Vim", "IntelliJ IDEA"),
+        playing = sequenceOf("Darts", "Electone"),
+        knowledges = sequenceOf(
             "Full-text search",
             "Unit testing",
             "Developing server-side application"
-        )
-    }
+        ),
+    ),
 
-    val learning = object {
-        val languages = sequenceOf("Go", "Kotlin (Native)")
-        val systems = sequenceOf("Elasticsearch")
-        val knowledges = sequenceOf(
+    learning = ProfileEntry(
+        languages = sequenceOf("Go", "Kotlin (Native)"),
+        systems = sequenceOf("Elasticsearch"),
+        knowledges = sequenceOf(
             "Full-text search",
             "SRE",
             "Natural language processing"
-        )
-    }
-}
+        ),
+    ),
+)
 ```
+
+https://pl.kotl.in/DJGGbljxT
