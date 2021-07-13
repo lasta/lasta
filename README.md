@@ -47,3 +47,6 @@ val lasta = Profile(
 ```
 
 https://pl.kotl.in/DJGGbljxT
+
+![lasta github stats](https://github-readme-stats.vercel.app/api?username=lasta&count_private=false&theme=dark&show_icons=true)
+![Top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lasta)
